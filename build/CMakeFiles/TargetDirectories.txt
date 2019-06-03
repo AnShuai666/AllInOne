@@ -1,0 +1,15 @@
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/rebuild_cache.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/edit_cache.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/test.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/QT_TEST001.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/QT_TEST002.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/Widget.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/sparsereconstruction.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/function.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/opengl_example.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/QT_TEST001_autogen.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/QT_TEST002_autogen.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/Widget_autogen.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/sparsereconstruction_autogen.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/function_autogen.dir
+/home/as/Qt5/clion_qt_test001/build/CMakeFiles/opengl_example_autogen.dir

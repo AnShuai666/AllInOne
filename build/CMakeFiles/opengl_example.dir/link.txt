@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/opengl_example.dir/opengl_example.cpp.o CMakeFiles/opengl_example.dir/opengl_example_autogen/mocs_compilation.cpp.o  -o ../bin/opengl_example -lGL -lGLU -lglut -lGLEW 

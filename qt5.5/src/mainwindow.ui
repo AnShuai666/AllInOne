@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1006</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QOpenGLWidget" name="openGLWidget"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1006</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="configMenu">
+    <property name="title">
+     <string>配置选项</string>
+    </property>
+    <addaction name="CUDAAction"/>
+    <addaction name="threadNumAction"/>
+    <addaction name="maxImageNumAction"/>
+    <addaction name="GCPaction"/>
+    <addaction name="inertialAction"/>
+   </widget>
+   <widget class="QMenu" name="stitchMenu">
+    <property name="title">
+     <string>图像拼接</string>
+    </property>
+    <addaction name="featureExtractionAction"/>
+    <addaction name="featureMatchingAction"/>
+    <addaction name="imageRegisterAction"/>
+    <addaction name="imageMenderAction"/>
+   </widget>
+   <widget class="QMenu" name="selectSceneMenu">
+    <property name="title">
+     <string>场景选择</string>
+    </property>
+    <addaction name="cityAction"/>
+    <addaction name="hillAction"/>
+    <addaction name="indoorAction"/>
+    <addaction name="handicraftAction"/>
+   </widget>
+   <widget class="QMenu" name="reconstructionMenu">
+    <property name="title">
+     <string>三维重建</string>
+    </property>
+    <addaction name="sparseReconstructionAction"/>
+    <addaction name="denseReconstructionAction"/>
+    <addaction name="meshAction"/>
+    <addaction name="textureAction"/>
+   </widget>
+   <widget class="QMenu" name="editModeMenu">
+    <property name="title">
+     <string>编辑模式</string>
+    </property>
+    <addaction name="videoeditAction"/>
+    <addaction name="pointCloudEditAction"/>
+   </widget>
+   <addaction name="configMenu"/>
+   <addaction name="stitchMenu"/>
+   <addaction name="selectSceneMenu"/>
+   <addaction name="reconstructionMenu"/>
+   <addaction name="editModeMenu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="newProjectAction"/>
+   <addaction name="openProjectAction"/>
+   <addaction name="autoReconstructionAction"/>
+   <addaction name="pointCloudGenerateAction"/>
+   <addaction name="meshGenerateAction"/>
+   <addaction name="textureGenerateAction"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="CUDAAction">
+   <property name="text">
+    <string>CUDA</string>
+   </property>
+  </action>
+  <action name="threadNumAction">
+   <property name="text">
+    <string>线程数</string>
+   </property>
+  </action>
+  <action name="maxImageNumAction">
+   <property name="text">
+    <string>最大图像数量</string>
+   </property>
+  </action>
+  <action name="GCPaction">
+   <property name="text">
+    <string>GCP</string>
+   </property>
+  </action>
+  <action name="inertialAction">
+   <property name="text">
+    <string>惯导</string>
+   </property>
+  </action>
+  <action name="featureMatchingAction">
+   <property name="text">
+    <string>特征匹配</string>
+   </property>
+  </action>
+  <action name="featureExtractionAction">
+   <property name="text">
+    <string>特征提取</string>
+   </property>
+  </action>
+  <action name="imageRegisterAction">
+   <property name="text">
+    <string>图像配准</string>
+   </property>
+  </action>
+  <action name="imageMenderAction">
+   <property name="text">
+    <string>图像融合</string>
+   </property>
+  </action>
+  <action name="cityAction">
+   <property name="text">
+    <string>城市</string>
+   </property>
+  </action>
+  <action name="hillAction">
+   <property name="text">
+    <string>山地</string>
+   </property>
+  </action>
+  <action name="handicraftAction">
+   <property name="text">
+    <string>工艺品</string>
+   </property>
+  </action>
+  <action name="indoorAction">
+   <property name="text">
+    <string>室内</string>
+   </property>
+  </action>
+  <action name="sparseReconstructionAction">
+   <property name="text">
+    <string>稀疏重建</string>
+   </property>
+  </action>
+  <action name="denseReconstructionAction">
+   <property name="text">
+    <string>稠密重建</string>
+   </property>
+  </action>
+  <action name="newProjectAction">
+   <property name="text">
+    <string>新建项目</string>
+   </property>
+  </action>
+  <action name="openProjectAction">
+   <property name="text">
+    <string>打开项目</string>
+   </property>
+  </action>
+  <action name="meshAction">
+   <property name="text">
+    <string>网格</string>
+   </property>
+  </action>
+  <action name="textureAction">
+   <property name="text">
+    <string>纹理</string>
+   </property>
+  </action>
+  <action name="autoReconstructionAction">
+   <property name="text">
+    <string>自动重建</string>
+   </property>
+  </action>
+  <action name="pointCloudGenerateAction">
+   <property name="text">
+    <string>点云生成</string>
+   </property>
+  </action>
+  <action name="meshGenerateAction">
+   <property name="text">
+    <string>网格生成</string>
+   </property>
+  </action>
+  <action name="textureGenerateAction">
+   <property name="text">
+    <string>贴图生成</string>
+   </property>
+  </action>
+  <action name="videoeditAction">
+   <property name="text">
+    <string>视频编辑</string>
+   </property>
+  </action>
+  <action name="pointCloudEditAction">
+   <property name="text">
+    <string>点云编辑</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
